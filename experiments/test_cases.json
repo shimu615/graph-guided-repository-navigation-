@@ -1,0 +1,32 @@
+﻿[
+  {
+    "id": "Q1",
+    "query": "calculate student grade marks",
+    "expected_file": "student.py"
+  },
+  {
+    "id": "Q2",
+    "query": "generate student performance report",
+    "expected_file": "report.py"
+  },
+  {
+    "id": "Q3",
+    "query": "connect application database",
+    "expected_file": "database.py"
+  },
+  {
+    "id": "Q4",
+    "query": "calculate a grade from marks",
+    "expected_file": "student.py"
+  },
+  {
+    "id": "Q5",
+    "query": "generate report using grade calculation",
+    "expected_file": "report.py"
+  },
+  {
+    "id": "Q6",
+    "query": "connect to the application database host",
+    "expected_file": "database.py"
+  }
+]
