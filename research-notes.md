@@ -77,3 +77,17 @@ No experimental results have been collected yet. Do not report performance claim
 - The results do not establish general superiority of either method.
 - Next step: expand the repository and test set, verify every expected
   file label, and run more representative experiments.
+
+## Progress Update — 21 October 2026
+
+- Audited the local Git repository and project structure.
+- Expanded the synthetic test set from six to twelve queries.
+- Added a structural audit for query IDs and expected-file existence.
+- Added unit tests for baseline search, graph search, import relationships,
+  empty queries, and reciprocal rank.
+- Re-ran evaluation using the same queries for both retrieval methods.
+- Limitation: the repository remains a small synthetic demonstration.
+- Ground-truth labels require manual review; structural validation alone
+  does not prove that each label is semantically correct.
+- Next step: improve test diversity and evaluate on a more representative
+  repository before making comparative performance claims.

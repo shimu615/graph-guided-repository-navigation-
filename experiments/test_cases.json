@@ -1,32 +1,62 @@
 ﻿[
   {
-    "id": "Q1",
+    "id": "Q01",
     "query": "calculate student grade marks",
     "expected_file": "student.py"
   },
   {
-    "id": "Q2",
+    "id": "Q02",
     "query": "generate student performance report",
     "expected_file": "report.py"
   },
   {
-    "id": "Q3",
+    "id": "Q03",
     "query": "connect application database",
     "expected_file": "database.py"
   },
   {
-    "id": "Q4",
-    "query": "calculate a grade from marks",
+    "id": "Q04",
+    "query": "calculate grade from marks",
     "expected_file": "student.py"
   },
   {
-    "id": "Q5",
+    "id": "Q05",
     "query": "generate report using grade calculation",
     "expected_file": "report.py"
   },
   {
-    "id": "Q6",
-    "query": "connect to the application database host",
+    "id": "Q06",
+    "query": "connect to application database host",
+    "expected_file": "database.py"
+  },
+  {
+    "id": "Q07",
+    "query": "function returns A B or C based on marks",
+    "expected_file": "student.py"
+  },
+  {
+    "id": "Q08",
+    "query": "student name and calculated grade report",
+    "expected_file": "report.py"
+  },
+  {
+    "id": "Q09",
+    "query": "database username and host connection",
+    "expected_file": "database.py"
+  },
+  {
+    "id": "Q10",
+    "query": "calculate_student_grade",
+    "expected_file": "student.py"
+  },
+  {
+    "id": "Q11",
+    "query": "generate_report",
+    "expected_file": "report.py"
+  },
+  {
+    "id": "Q12",
+    "query": "connect_database",
     "expected_file": "database.py"
   }
 ]

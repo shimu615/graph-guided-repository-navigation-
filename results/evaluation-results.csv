@@ -1,13 +1,25 @@
 timestamp_utc,method,case_id,query,expected_file,top1_file,expected_rank,top1_correct,recall_at_5,reciprocal_rank,ranked_files,result_count
-2026-10-20T19:44:22.615137+00:00,baseline,Q1,calculate student grade marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
-2026-10-20T19:44:22.616621+00:00,baseline,Q2,generate student performance report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
-2026-10-20T19:44:22.617721+00:00,baseline,Q3,connect application database,database.py,database.py,1,1,1,1.0,database.py,1
-2026-10-20T19:44:22.618869+00:00,baseline,Q4,calculate a grade from marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
-2026-10-20T19:44:22.619974+00:00,baseline,Q5,generate report using grade calculation,report.py,report.py,1,1,1,1.0,report.py > student.py,2
-2026-10-20T19:44:22.621075+00:00,baseline,Q6,connect to the application database host,database.py,database.py,1,1,1,1.0,database.py > report.py,2
-2026-10-20T19:44:22.623416+00:00,graph,Q1,calculate student grade marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
-2026-10-20T19:44:22.625122+00:00,graph,Q2,generate student performance report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
-2026-10-20T19:44:22.626619+00:00,graph,Q3,connect application database,database.py,database.py,1,1,1,1.0,database.py,1
-2026-10-20T19:44:22.628140+00:00,graph,Q4,calculate a grade from marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
-2026-10-20T19:44:22.628140+00:00,graph,Q5,generate report using grade calculation,report.py,report.py,1,1,1,1.0,report.py > student.py,2
-2026-10-20T19:44:22.630961+00:00,graph,Q6,connect to the application database host,database.py,database.py,1,1,1,1.0,database.py > report.py,2
+2026-10-20T20:04:55.125723+00:00,baseline,Q01,calculate student grade marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.125723+00:00,baseline,Q02,generate student performance report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.125723+00:00,baseline,Q03,connect application database,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.128429+00:00,baseline,Q04,calculate grade from marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.128429+00:00,baseline,Q05,generate report using grade calculation,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.128429+00:00,baseline,Q06,connect to application database host,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.128429+00:00,baseline,Q07,function returns A B or C based on marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.128429+00:00,baseline,Q08,student name and calculated grade report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.133442+00:00,baseline,Q09,database username and host connection,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.133442+00:00,baseline,Q10,calculate_student_grade,student.py,report.py,2,0,1,0.5,report.py > student.py,2
+2026-10-20T20:04:55.136488+00:00,baseline,Q11,generate_report,report.py,report.py,1,1,1,1.0,report.py,1
+2026-10-20T20:04:55.136717+00:00,baseline,Q12,connect_database,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.136717+00:00,graph,Q01,calculate student grade marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.136717+00:00,graph,Q02,generate student performance report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.136717+00:00,graph,Q03,connect application database,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.143240+00:00,graph,Q04,calculate grade from marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.144810+00:00,graph,Q05,generate report using grade calculation,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.144810+00:00,graph,Q06,connect to application database host,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.144810+00:00,graph,Q07,function returns A B or C based on marks,student.py,student.py,1,1,1,1.0,student.py > report.py,2
+2026-10-20T20:04:55.144810+00:00,graph,Q08,student name and calculated grade report,report.py,report.py,1,1,1,1.0,report.py > student.py,2
+2026-10-20T20:04:55.144810+00:00,graph,Q09,database username and host connection,database.py,database.py,1,1,1,1.0,database.py,1
+2026-10-20T20:04:55.144810+00:00,graph,Q10,calculate_student_grade,student.py,report.py,2,0,1,0.5,report.py > student.py,2
+2026-10-20T20:04:55.155103+00:00,graph,Q11,generate_report,report.py,report.py,1,1,1,1.0,report.py,1
+2026-10-20T20:04:55.155103+00:00,graph,Q12,connect_database,database.py,database.py,1,1,1,1.0,database.py,1
