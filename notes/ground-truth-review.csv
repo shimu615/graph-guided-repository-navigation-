@@ -1,0 +1,13 @@
+﻿case_id,query,expected_file_from_dataset,expected_file_exists,available_python_files,reviewer_verified_label,reviewer_notes
+Q01,calculate student grade marks,student.py,True,database.py; report.py; student.py,student.py,calculate_student_grade(marks) calculates grades from marks.
+Q02,generate student performance report,report.py,True,database.py; report.py; student.py,report.py,generate_report creates a student performance report.
+Q03,connect application database,database.py,True,database.py; report.py; student.py,database.py,connect_database handles database host and username.
+Q04,calculate grade from marks,student.py,True,database.py; report.py; student.py,student.py,The grade calculation function is defined in student.py.
+Q05,generate report using grade calculation,report.py,True,database.py; report.py; student.py,report.py,generate_report uses calculate_student_grade to build the report.
+Q06,connect to application database host,database.py,True,database.py; report.py; student.py,database.py,connect_database accepts the host parameter.
+Q07,function returns A B or C based on marks,student.py,True,database.py; report.py; student.py,student.py,"calculate_student_grade returns A, B, or C based on marks."
+Q08,student name and calculated grade report,report.py,True,database.py; report.py; student.py,report.py,generate_report returns the student name and calculated grade.
+Q09,database username and host connection,database.py,True,database.py; report.py; student.py,database.py,connect_database accepts host and username.
+Q10,calculate_student_grade,student.py,True,database.py; report.py; student.py,student.py,The calculate_student_grade function definition is in student.py; report.py imports and calls it.
+Q11,generate_report,report.py,True,database.py; report.py; student.py,report.py,The generate_report function is defined in report.py.
+Q12,connect_database,database.py,True,database.py; report.py; student.py,database.py,The connect_database function is defined in database.py.
