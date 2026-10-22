@@ -91,3 +91,15 @@ No experimental results have been collected yet. Do not report performance claim
   does not prove that each label is semantically correct.
 - Next step: improve test diversity and evaluate on a more representative
   repository before making comparative performance claims.
+
+## Progress Update — 22 October 2026
+
+- Investigated the Q10 top-1 ranking error.
+- Added an error-analysis report based on evaluation CSV results.
+- Extended evaluation output with local runtime measurements.
+- Added a ground-truth review checklist for all twelve synthetic queries.
+- Re-ran unit tests, dataset audit, evaluation, and error analysis.
+- Limitation: three synthetic files are insufficient for general conclusions.
+- Runtime measurements on this tiny repository are preliminary.
+- Next step: manually verify labels and prepare a more representative
+  repository and query set for further evaluation.
