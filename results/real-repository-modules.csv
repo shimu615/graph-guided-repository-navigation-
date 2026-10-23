@@ -1,0 +1,38 @@
+﻿file,sha256,imports,line_count
+docs/_themes/flask_theme_support.py,afc582667afd86a1395d4d59ca976594446b9aca69bc5b21236c879a9a7ae9bc,pygments.style; pygments.token,86
+docs/conf.py,ba7271074083cde611100ae4c0f74d448a90a8b6a6043926336989157d5a5783,os; requests; sys,385
+setup.py,8289a11ea484cfc10077c7b11d2024bed82a2b9730ae5c30cf731a898f948c54,setuptools; sys,9
+src/requests/__init__.py,446a6f1c5efe59c25fd5be5db8c1ba973f6b25a1057a07032d3d3b6ee6a312c1,.__version__; .api; .exceptions; .models; .sessions; .status_codes; __future__; chardet; charset_normalizer; cryptography; logging; ssl; urllib3; urllib3.contrib; urllib3.exceptions; warnings,219
+src/requests/__version__.py,138a8ee2cb71898d5195c6937daa4e9045daff7e69949e1f68ed839fb777c39b,,14
+src/requests/_internal_utils.py,3c72d298d4a062c5eb87d62241b55f0d6cc884cab8fbb4b70b1f0587317b149f,.compat; re,51
+src/requests/_types.py,5eb5fc19d6a03cd7c6a3c104779425ec724f42d4701ee0ec4b8001c6bb892ca0,.auth; .cookies; .models; .structures; __future__; collections.abc; http.cookiejar; typing; typing_extensions,188
+src/requests/adapters.py,88435a18a77d30e95006b64d73e35372897ad76b67f4be9533eea2658cdc0bc4,._types; .auth; .compat; .cookies; .exceptions; .models; .structures; .utils; __future__; os.path; socket; typing; urllib3.connectionpool; urllib3.contrib.socks; urllib3.exceptions; urllib3.poolmanager; urllib3.util; urllib3.util.retry; warnings,748
+src/requests/api.py,86a2284d9720064e77b0c81b30482b6010aef3f6429c4272de14e70c0a0b32d6,.models; __future__; typing; typing_extensions,180
+src/requests/auth.py,c35ba30ee054ed8744989fee2cddd06a581255a6929e58f0947d1824530095f1,._internal_utils; .compat; .cookies; .models; .utils; __future__; base64; hashlib; http.cookiejar; os; re; threading; time; typing; warnings,354
+src/requests/certs.py,5200c997cec403786b1045457c262f1b259270e0fe936b2bac9ba0f5efa84d2e,certifi,18
+src/requests/compat.py,da30c58688e387d3a0fece16554b52178838caafa6b098794d2b9a2b9cf82394,__future__; chardet; collections; collections.abc; http; http.cookies; importlib; io; json; simplejson; sys; types; typing; urllib.parse; urllib.request; urllib3,115
+src/requests/cookies.py,bddbad7b2e9c1d53f1cb7eb9e8f3e3a271f06f6dd44a4d4f891751a7cf5ee3f2,._internal_utils; ._types; .compat; .models; __future__; _typeshed; calendar; collections.abc; copy; http.cookiejar; threading; time; typing,625
+src/requests/exceptions.py,dffbf296afc64fbdecb7a9b3331a4af886989f875cbbaee625cad3fb3b668083,.compat; .models; __future__; typing; urllib3.exceptions,162
+src/requests/help.py,d0a5fec35aa4b6526df93ceb02fd7614310eea51ed27ce26e0825685d3c20ed7,OpenSSL; chardet; charset_normalizer; cryptography; idna; json; platform; ssl; sys; typing; urllib3; urllib3.contrib,132
+src/requests/hooks.py,aa947312c1c17982362bcbdf8bf1adcbe821ecee0cfb47481e1e94129c2ff406,.models; __future__; collections.abc; typing,48
+src/requests/models.py,2d4b5a2738256b3d10cbe8b6e5ad572b9579b847396de6b4093affa5e328150c,._internal_utils; .adapters; .auth; .compat; .cookies; .exceptions; .hooks; .status_codes; .structures; .utils; __future__; collections.abc; datetime; encodings.idna; http.cookiejar; idna; io; typing; typing_extensions; urllib3.exceptions; urllib3.fields; urllib3.filepost; urllib3.util,1184
+src/requests/packages.py,b745f5941ad2e2dcd9d44b5f09841c87a7353ab669ba82443f70b480f178082d,.compat; sys,23
+src/requests/sessions.py,03cef27dd6ce31c5bd1b724a80156a24e9ccb2e7041f1d6c3500fa60c3871d21,._internal_utils; ._types; .adapters; .auth; .compat; .cookies; .exceptions; .hooks; .models; .status_codes; .structures; .utils; __future__; collections; collections.abc; datetime; http.cookiejar; os; sys; time; typing; typing_extensions,920
+src/requests/status_codes.py,29551ca44d5f87c4f9a92e2f4f86f317c3d3d1b9238f031004896c8d9e48c61f,.structures,128
+src/requests/structures.py,6323bbcacce5f2df5b9146d9d5355826f9ba862a33f8c632b598625079902639,.compat; __future__; collections; collections.abc; typing,130
+src/requests/utils.py,8cc49c711289930203da362c41a0531dd7062d9a7c285cd6a1c21be56c5f0704,.__version__; ._internal_utils; ._types; .compat; .cookies; .exceptions; .models; .structures; __future__; codecs; collections; collections.abc; contextlib; http.cookiejar; io; netrc; os; re; socket; struct; sys; tempfile; typing; urllib3.util; warnings; winreg; zipfile,1155
+tests/__init__.py,b63927bded9e15eb17b06835b3fcfee04696fd114620e436ccac1fa652b2c2df,urllib3.exceptions; warnings,14
+tests/compat.py,5aeb44ac81acb49f9f6d4bc43d40abb017cd9b4f96478c0544e03e623d5f583f,StringIO; cStringIO; io; warnings,23
+tests/conftest.py,5b7b382158769cf882e509514cd6fb92fa7a73e3a93c2729fa8653d33408f8ba,BaseHTTPServer; SimpleHTTPServer; http.server; pytest; requests.compat; ssl; threading; trustme,67
+tests/test_adapters.py,34ee3ed58e2875dd2c9f394f672c24f0538b81e6baa1c352ba2e87ab5172d10b,requests.adapters,8
+tests/test_help.py,6527243a09aca6928a760b98ecda44a073eeaf500fc1751054bc9a7d6ab7a3c0,requests.help; unittest,27
+tests/test_hooks.py,6a28a7c74664037057758f5c642b46318c40ab66c55c5a3af377788ec2509329,pytest; requests,22
+tests/test_lowlevel.py,5c9b58935862cf3b2aea3475ac0377620c6badb7c4ea61dbbccf673f1eaa59fd,.utils; pytest; requests; requests.compat; tests.testserver.server; threading,428
+tests/test_packages.py,28ef0b9f75e4d22b09fa5695619c12de050c9dd293797e887ce14aca2f287687,requests,13
+tests/test_requests.py,bc9a6811d6c0f4247fb4ca844e3eeb84c13088321b684692b0ef3eeac0b38bc5,.compat; .testserver.server; .utils; collections; contextlib; io; json; os; pickle; pytest; re; requests; requests.adapters; requests.auth; requests.compat; requests.cookies; requests.exceptions; requests.hooks; requests.models; requests.packages.urllib3.poolmanager; requests.sessions; requests.structures; ssl; tempfile; threading; unittest; urllib3; urllib3.util; warnings,3094
+tests/test_structures.py,3b4cd60837206ae295470a70162270f9156844356620c7068bd5da0549da26f0,pytest; requests.structures,91
+tests/test_testserver.py,133f6f3284ed8e1ca59f25288e0a2f58bfa8ec19fd2a4a6d9a334719e443beaa,pytest; requests; socket; tests.testserver.server; threading; time,165
+tests/test_utils.py,3953bda8c96f8f38f0f9ead5f0cb1c7aabb3cfba48f513fc742a3abe9f84d192,.compat; collections; copy; filecmp; io; os; pytest; requests; requests._internal_utils; requests.cookies; requests.structures; requests.utils; tarfile; unittest; winreg; zipfile,1013
+tests/testserver/__init__.py,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,,0
+tests/testserver/server.py,6796fd983618217cb812db36714505f3bcb8ca245c314c379f1f14f026e686de,select; socket; ssl; threading,176
+tests/utils.py,8a37e0749fe20102dfcfa9a85ca57e8ab0f32fbce07e08926cb1800f9b2b5305,contextlib; os,17
