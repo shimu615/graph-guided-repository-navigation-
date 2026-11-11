@@ -1,0 +1,53 @@
+{
+  "run_date": "2026-10-30",
+  "run_id": "20261030-005054",
+  "project": "Graph-Guided Repository Navigation for Coding Agents",
+  "repository": "psf/requests",
+  "tests": {
+    "Preflight": {
+      "status": "PASS",
+      "details": "Evaluator, dataset and external repository exist"
+    },
+    "Dataset and index": {
+      "status": "PASS",
+      "details": "queries=12, indexed_files=37, graph_nodes=20, graph_edges=194"
+    },
+    "A — Existing query wording results": {
+      "status": "PASS",
+      "details": "rows=36, variant_counts={'original': 12, 'wording_1': 12, 'wording_2': 12}, file=oct30-query-wording-robustness.csv"
+    },
+    "B — Missing graph connections": {
+      "status": "PASS",
+      "details": "evaluated=12, output=robustness_B_no_graph_edges_20261030-005054.csv, remaining_edges=0"
+    },
+    "C — Missing import edges": {
+      "status": "PASS",
+      "details": "evaluated=12, original_edges=194, remaining_edges=99, output=robustness_C_half_graph_edges_20261030-005054.csv"
+    },
+    "D — Fair comparison checks": {
+      "status": "PASS",
+      "details": "same_queries=True, valid_ranks=True, same_query_text_and_targets=True, metrics={'query_count': 12, 'baseline_top1_accuracy': 0.0, 'graph_top1_accuracy': 0.0, 'baseline_mrr': 0.02702702702702703, 'graph_mrr': 0.02702702702702703}"
+    },
+    "E — Invalid target rejection": {
+      "status": "FAIL",
+      "details": "ValueError: No target column found. Columns: ['query_id', 'query', 'proposed_target', 'review_status', 'reviewer_notes']"
+    }
+  },
+  "limitations": [
+    "Results are limited to the current repository and query dataset.",
+    "Synthetic graph ablations do not establish general superiority.",
+    "A test is marked PASS only when its check actually succeeds."
+  ],
+  "fair_comparison_metrics": {
+    "query_count": 12,
+    "baseline_top1_accuracy": 0.0,
+    "graph_top1_accuracy": 0.0,
+    "baseline_mrr": 0.02702702702702703,
+    "graph_mrr": 0.02702702702702703
+  },
+  "targeted_pytest": {
+    "return_code": 0,
+    "stdout": ".........                                                                [100%]\n9 passed in 0.05s\n",
+    "stderr": ""
+  }
+}

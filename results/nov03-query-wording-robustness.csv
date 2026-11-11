@@ -1,0 +1,37 @@
+﻿query_id,variant,query,target,baseline_rank,graph_rank,baseline_top1,graph_top1,baseline_reciprocal_rank,graph_reciprocal_rank
+IND-001,original,I need to send an HTTP request and handle the response. Where should I start?,src/requests/api.py,7,7,False,False,0.14285714285714285,0.14285714285714285
+IND-001,wording_1,Which part of the code handles this task: I need to send an HTTP request and handle the response. Where should I start?,src/requests/api.py,7,7,False,False,0.14285714285714285,0.14285714285714285
+IND-001,wording_2,I want to locate the implementation. I need to send an HTTP request and handle the response. Where should I start?,src/requests/api.py,8,8,False,False,0.125,0.125
+IND-002,original,How can I keep cookies and authentication state across several HTTP requests?,src/requests/sessions.py,1,1,True,True,1.0,1.0
+IND-002,wording_1,Which part of the code handles this task: How can I keep cookies and authentication state across several HTTP requests?,src/requests/sessions.py,1,1,True,True,1.0,1.0
+IND-002,wording_2,I want to locate the implementation. How can I keep cookies and authentication state across several HTTP requests?,src/requests/sessions.py,1,1,True,True,1.0,1.0
+IND-003,original,Where is the logic for attaching HTTP basic authentication credentials?,src/requests/auth.py,3,3,False,False,0.3333333333333333,0.3333333333333333
+IND-003,wording_1,Which part of the code handles this task: Where is the logic for attaching HTTP basic authentication credentials?,src/requests/auth.py,5,5,False,False,0.2,0.2
+IND-003,wording_2,I want to locate the implementation. Where is the logic for attaching HTTP basic authentication credentials?,src/requests/auth.py,2,2,False,False,0.5,0.5
+IND-004,original,I need to customize how outgoing HTTP connections are created. Which file should I inspect?,src/requests/adapters.py,1,1,True,True,1.0,1.0
+IND-004,wording_1,Which part of the code handles this task: I need to customize how outgoing HTTP connections are created. Which file should I inspect?,src/requests/adapters.py,1,1,True,True,1.0,1.0
+IND-004,wording_2,I want to locate the implementation. I need to customize how outgoing HTTP connections are created. Which file should I inspect?,src/requests/adapters.py,1,1,True,True,1.0,1.0
+IND-005,original,Where can I find the objects that represent HTTP requests and responses?,src/requests/models.py,4,4,False,False,0.25,0.25
+IND-005,wording_1,Which part of the code handles this task: Where can I find the objects that represent HTTP requests and responses?,src/requests/models.py,1,1,True,True,1.0,1.0
+IND-005,wording_2,I want to locate the implementation. Where can I find the objects that represent HTTP requests and responses?,src/requests/models.py,2,2,False,False,0.5,0.5
+IND-006,original,How does the library organize and expose HTTP error classes?,src/requests/exceptions.py,9,9,False,False,0.1111111111111111,0.1111111111111111
+IND-006,wording_1,Which part of the code handles this task: How does the library organize and expose HTTP error classes?,src/requests/exceptions.py,13,12,False,False,0.07692307692307693,0.08333333333333333
+IND-006,wording_2,I want to locate the implementation. How does the library organize and expose HTTP error classes?,src/requests/exceptions.py,11,11,False,False,0.09090909090909091,0.09090909090909091
+IND-007,original,Where is the code that manages a cookie jar and cookie lookup?,src/requests/cookies.py,2,2,False,False,0.5,0.5
+IND-007,wording_1,Which part of the code handles this task: Where is the code that manages a cookie jar and cookie lookup?,src/requests/cookies.py,6,5,False,False,0.16666666666666666,0.2
+IND-007,wording_2,I want to locate the implementation. Where is the code that manages a cookie jar and cookie lookup?,src/requests/cookies.py,2,1,False,True,0.5,1.0
+IND-008,original,I need to work with HTTP status codes using named constants. Where should I look?,src/requests/status_codes.py,13,15,False,False,0.07692307692307693,0.06666666666666667
+IND-008,wording_1,Which part of the code handles this task: I need to work with HTTP status codes using named constants. Where should I look?,src/requests/status_codes.py,13,13,False,False,0.07692307692307693,0.07692307692307693
+IND-008,wording_2,I want to locate the implementation. I need to work with HTTP status codes using named constants. Where should I look?,src/requests/status_codes.py,13,15,False,False,0.07692307692307693,0.06666666666666667
+IND-009,original,Where is the implementation for a case-insensitive dictionary-like data structure?,src/requests/structures.py,2,1,False,True,0.5,1.0
+IND-009,wording_1,Which part of the code handles this task: Where is the implementation for a case-insensitive dictionary-like data structure?,src/requests/structures.py,6,6,False,False,0.16666666666666666,0.16666666666666666
+IND-009,wording_2,I want to locate the implementation. Where is the implementation for a case-insensitive dictionary-like data structure?,src/requests/structures.py,5,5,False,False,0.2,0.2
+IND-010,original,Where can I find helper functions for preparing or normalizing URLs?,src/requests/utils.py,1,1,True,True,1.0,1.0
+IND-010,wording_1,Which part of the code handles this task: Where can I find helper functions for preparing or normalizing URLs?,src/requests/utils.py,1,1,True,True,1.0,1.0
+IND-010,wording_2,I want to locate the implementation. Where can I find helper functions for preparing or normalizing URLs?,src/requests/utils.py,1,1,True,True,1.0,1.0
+IND-011,original,I need to understand how request hooks are dispatched. Which module should I inspect?,src/requests/hooks.py,20,20,False,False,0.05,0.05
+IND-011,wording_1,Which part of the code handles this task: I need to understand how request hooks are dispatched. Which module should I inspect?,src/requests/hooks.py,19,19,False,False,0.05263157894736842,0.05263157894736842
+IND-011,wording_2,I want to locate the implementation. I need to understand how request hooks are dispatched. Which module should I inspect?,src/requests/hooks.py,20,20,False,False,0.05,0.05
+IND-012,original,Where does the package expose its public interface and version information?,src/requests/__init__.py,11,11,False,False,0.09090909090909091,0.09090909090909091
+IND-012,wording_1,Which part of the code handles this task: Where does the package expose its public interface and version information?,src/requests/__init__.py,17,17,False,False,0.058823529411764705,0.058823529411764705
+IND-012,wording_2,I want to locate the implementation. Where does the package expose its public interface and version information?,src/requests/__init__.py,12,12,False,False,0.08333333333333333,0.08333333333333333

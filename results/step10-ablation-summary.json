@@ -1,0 +1,74 @@
+{
+  "analysis_id": "STEP10-ABLATION-STUDY",
+  "generated_at_utc": "2026-11-11T11:41:47.321278+00:00",
+  "repository": "psf/requests",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "directed_import_graph_entries": 304,
+  "top_k": 5,
+  "configurations": {
+    "0.00": {
+      "graph_boost": 0.0,
+      "metrics": {
+        "top1_accuracy": 0.25,
+        "recall_at_5": 0.5833333333333334,
+        "mrr": 0.42126114626114625
+      },
+      "query_count": 12,
+      "metric_difference_vs_lexical": {
+        "top1_accuracy": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": 0.0
+      }
+    },
+    "0.05": {
+      "graph_boost": 0.05,
+      "metrics": {
+        "top1_accuracy": 0.25,
+        "recall_at_5": 0.5833333333333334,
+        "mrr": 0.4204064454064454
+      },
+      "query_count": 12,
+      "metric_difference_vs_lexical": {
+        "top1_accuracy": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": -0.0008547008547008517
+      }
+    },
+    "0.10": {
+      "graph_boost": 0.1,
+      "metrics": {
+        "top1_accuracy": 0.25,
+        "recall_at_5": 0.5833333333333334,
+        "mrr": 0.4204064454064454
+      },
+      "query_count": 12,
+      "metric_difference_vs_lexical": {
+        "top1_accuracy": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": -0.0008547008547008517
+      }
+    },
+    "0.20": {
+      "graph_boost": 0.2,
+      "metrics": {
+        "top1_accuracy": 0.25,
+        "recall_at_5": 0.5833333333333334,
+        "mrr": 0.4208032708032708
+      },
+      "query_count": 12,
+      "metric_difference_vs_lexical": {
+        "top1_accuracy": 0.0,
+        "recall_at_5": 0.0,
+        "mrr": -0.00045787545787545625
+      }
+    }
+  },
+  "limitations": [
+    "Only one Python repository was evaluated.",
+    "The dataset contains twelve manually reviewed queries.",
+    "The analysis uses fixed graph boost values.",
+    "No statistical significance claim is made.",
+    "The experiment does not establish a universally optimal boost."
+  ]
+}

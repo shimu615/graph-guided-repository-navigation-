@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-27",
+  "project": "Graph-Guided Repository Navigation for Coding Agents",
+  "repository": "psf/requests",
+  "evaluation_type": "exploratory per-query analysis",
+  "reviewed_query_count": 20,
+  "evaluated_query_count": 20,
+  "all_review_rows_verified": true,
+  "python_files_indexed": 19,
+  "import_graph_edges": 68,
+  "ranking_comparison": {
+    "graph_target_rank_improved": 0,
+    "baseline_target_rank_improved": 0,
+    "same_target_rank": 20,
+    "baseline_top1_count": 19,
+    "graph_top1_count": 19,
+    "top1_status_changed": 0,
+    "outcome_counts": {
+      "Both top-1": 19,
+      "Same rank; neither top-1": 1
+    }
+  },
+  "interpretation_warning": "Exploratory analysis only. The query set is small and was selected from repository source descriptions. These results do not establish generalization or superiority.",
+  "runtime_warning": "Do not compare single-run runtime values as a reliable performance benchmark.",
+  "next_steps": [
+    "Manually inspect cases where neither method ranks the target first.",
+    "Create a separate set of independent queries.",
+    "Review graph construction and scoring before making superiority claims.",
+    "Repeat experiments with a documented protocol."
+  ]
+}

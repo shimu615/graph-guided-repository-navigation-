@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-01",
+  "test": "E - Invalid target rejection",
+  "target_column": "proposed_target",
+  "invalid_target_rejected": true,
+  "status": "PASS",
+  "error": "ValueError: Invalid target for IND-001: C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research\\external\\requests\\THIS_PATH_MUST_NOT_EXIST\\invalid_target.py",
+  "original_dataset_modified": false
+}

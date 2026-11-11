@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-30",
+  "repository": "psf/requests",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "import_graph_edges": 194,
+  "baseline_top1_accuracy": 0.25,
+  "graph_top1_accuracy": 0.3333333333333333,
+  "baseline_mrr": 0.42126114626114625,
+  "graph_mrr": 0.4620731120731121,
+  "improved_queries": 1,
+  "regressed_queries": 1,
+  "unchanged_queries": 10,
+  "status": "DIAGNOSTIC_COMPLETE_REVIEW_REQUIRED",
+  "warning": "This reruns the existing evaluator; it does not independently validate the scoring method."
+}

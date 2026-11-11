@@ -1,0 +1,4 @@
+﻿experiment_date,experiment,query_count,baseline_top1,graph_top1,baseline_recall_at_5,graph_recall_at_5,baseline_mrr,graph_mrr,notes
+2026-10-29,Independent evaluation,12,0.25,0.3333333333333333,0.5833333333333334,0.5833333333333334,0.42126114626114625,0.4620731120731121,Exploratory evaluation; small query set.
+2026-10-30,Error analysis of Oct 29 evaluation,12,0.25,0.3333333333333333,,,0.4212610833333333,0.4620730833333333,"Improved=1; Regressed=1; Unchanged=10. Analysis of Oct 29 data, not a new independent experiment."
+2026-10-31,Reproducibility check,12,,,,,,,"Reproducible=True; CSV identical=True; JSON identical=True. Repeatability check, not a new accuracy experiment."

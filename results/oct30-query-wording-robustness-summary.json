@@ -1,0 +1,36 @@
+﻿{
+  "date": "2026-10-30",
+  "repository": "psf/requests",
+  "original_query_count": 12,
+  "variants_per_query": 3,
+  "total_evaluations": 36,
+  "variant_metrics": {
+    "original": {
+      "query_count": 12,
+      "baseline_top1_accuracy": 0.25,
+      "graph_top1_accuracy": 0.3333333333333333,
+      "baseline_mrr": 0.42126114626114625,
+      "graph_mrr": 0.4620731120731121
+    },
+    "wording_1": {
+      "query_count": 12,
+      "baseline_top1_accuracy": 0.3333333333333333,
+      "graph_top1_accuracy": 0.3333333333333333,
+      "baseline_mrr": 0.4117909781996469,
+      "graph_mrr": 0.4151029440116127
+    },
+    "wording_2": {
+      "query_count": 12,
+      "baseline_top1_accuracy": 0.25,
+      "graph_top1_accuracy": 0.3333333333333333,
+      "baseline_mrr": 0.4271804584304584,
+      "graph_mrr": 0.4679924242424242
+    }
+  },
+  "limitations": [
+    "Exploratory wording perturbations, not a comprehensive paraphrase benchmark.",
+    "All queries target files in one repository.",
+    "Results depend on the lexical scoring and import graph implementation.",
+    "The added prefixes may change query token overlap; they do not guarantee semantic equivalence."
+  ]
+}

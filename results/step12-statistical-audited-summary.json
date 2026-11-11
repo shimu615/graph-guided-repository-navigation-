@@ -1,0 +1,236 @@
+{
+  "analysis_id": "STEP12-STATISTICAL-ANALYSIS",
+  "generated_at_utc": "2026-11-11T13:06:56.564654+00:00",
+  "input_file": "results/step11-robustness-audited.csv",
+  "query_count": 12,
+  "input_row_count": 240,
+  "primary_method_comparison": {
+    "baseline": "lexical baseline",
+    "graph": "graph-guided retrieval",
+    "graph_boost": 0.1,
+    "edge_dropout": null,
+    "paired_by": "query_id"
+  },
+  "primary_comparison": {
+    "top1": {
+      "metric": "top1",
+      "query_count": 12,
+      "baseline_mean": 0.25,
+      "graph_mean": 0.25,
+      "mean_difference_graph_minus_baseline": 0.0,
+      "median_difference_graph_minus_baseline": 0.0,
+      "wins": 0,
+      "ties": 12,
+      "losses": 0,
+      "exact_mcnemar_test": {
+        "graph_only_successes": 0,
+        "baseline_only_successes": 0,
+        "discordant_pairs": 0,
+        "p_value_two_sided": 1.0
+      }
+    },
+    "recall_at_5": {
+      "metric": "recall_at_5",
+      "query_count": 12,
+      "baseline_mean": 0.5833333333333334,
+      "graph_mean": 0.5833333333333334,
+      "mean_difference_graph_minus_baseline": 0.0,
+      "median_difference_graph_minus_baseline": 0.0,
+      "wins": 0,
+      "ties": 12,
+      "losses": 0,
+      "exact_mcnemar_test": {
+        "graph_only_successes": 0,
+        "baseline_only_successes": 0,
+        "discordant_pairs": 0,
+        "p_value_two_sided": 1.0
+      }
+    },
+    "mrr": {
+      "metric": "mrr",
+      "query_count": 12,
+      "baseline_mean": 0.42126114626114625,
+      "graph_mean": 0.4204064454064454,
+      "mean_difference_graph_minus_baseline": -0.0008547008547008551,
+      "median_difference_graph_minus_baseline": 0.0,
+      "wins": 0,
+      "ties": 11,
+      "losses": 1,
+      "exact_paired_permutation_test": {
+        "p_value_two_sided": 1.0,
+        "permutations": 2,
+        "nonzero_pairs": 1,
+        "observed_mean_difference": -0.0008547008547008551
+      },
+      "bootstrap_95_ci": {
+        "confidence_level": 0.95,
+        "method": "paired percentile bootstrap",
+        "repetitions": 10000,
+        "lower": -0.0025641025641025654,
+        "upper": 0.0,
+        "seed": 20261111
+      }
+    }
+  },
+  "boost_sensitivity": [
+    {
+      "boost": 0.0,
+      "query_count": 12,
+      "top1_mean": 0.25,
+      "recall_at_5_mean": 0.5833333333333334,
+      "mrr_mean": 0.42126114626114625
+    },
+    {
+      "boost": 0.05,
+      "query_count": 12,
+      "top1_mean": 0.25,
+      "recall_at_5_mean": 0.5833333333333334,
+      "mrr_mean": 0.4204064454064454
+    },
+    {
+      "boost": 0.1,
+      "query_count": 12,
+      "top1_mean": 0.25,
+      "recall_at_5_mean": 0.5833333333333334,
+      "mrr_mean": 0.4204064454064454
+    },
+    {
+      "boost": 0.2,
+      "query_count": 12,
+      "top1_mean": 0.25,
+      "recall_at_5_mean": 0.5833333333333334,
+      "mrr_mean": 0.4208032708032708
+    }
+  ],
+  "edge_dropout_sensitivity": [
+    {
+      "dropout_rate": 0.1,
+      "seed_count": 5,
+      "seed_level_results": [
+        {
+          "seed": 11,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4204064454064454
+        },
+        {
+          "seed": 22,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.41623977873977874
+        },
+        {
+          "seed": 33,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4204064454064454
+        },
+        {
+          "seed": 44,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4204064454064454
+        },
+        {
+          "seed": 55,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4204064454064454
+        }
+      ],
+      "mean_seed_mrr": 0.41957311207311204,
+      "sd_seed_mrr": 0.0018633899812498182,
+      "mean_seed_top1": 0.25,
+      "mean_seed_recall_at_5": 0.5833333333333334
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed_count": 5,
+      "seed_level_results": [
+        {
+          "seed": 11,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.43074479127110704
+        },
+        {
+          "seed": 22,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.39540644540644543
+        },
+        {
+          "seed": 33,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.42820559070559067
+        },
+        {
+          "seed": 44,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4180390211640212
+        },
+        {
+          "seed": 55,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4204064454064454
+        }
+      ],
+      "mean_seed_mrr": 0.41856045879072196,
+      "sd_seed_mrr": 0.013975643341462066,
+      "mean_seed_top1": 0.25,
+      "mean_seed_recall_at_5": 0.5833333333333334
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed_count": 5,
+      "seed_level_results": [
+        {
+          "seed": 11,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.4319805194805195
+        },
+        {
+          "seed": 22,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.39602256904888483
+        },
+        {
+          "seed": 33,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.42172410922410924
+        },
+        {
+          "seed": 44,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.41894633144633137
+        },
+        {
+          "seed": 55,
+          "top1": 0.25,
+          "recall_at_5": 0.5833333333333334,
+          "mrr": 0.41974475687710977
+        }
+      ],
+      "mean_seed_mrr": 0.41768365721539097,
+      "sd_seed_mrr": 0.013188733275498663,
+      "mean_seed_top1": 0.25,
+      "mean_seed_recall_at_5": 0.5833333333333334
+    }
+  ],
+  "interpretation_scope": "Exploratory paired statistical analysis on one repository and 12 manually reviewed queries. No broad superiority or cross-repository generalization claim is supported.",
+  "methods": {
+    "mrr_test": "exact two-sided paired sign-flip permutation test",
+    "binary_tests": "exact two-sided McNemar test",
+    "confidence_interval": "paired percentile bootstrap 95% CI",
+    "bootstrap_repetitions": 10000,
+    "random_seed": 20261111,
+    "top_k": 5
+  }
+}

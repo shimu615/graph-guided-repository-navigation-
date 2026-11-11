@@ -103,3 +103,45 @@ No experimental results have been collected yet. Do not report performance claim
 - Runtime measurements on this tiny repository are preliminary.
 - Next step: manually verify labels and prepare a more representative
   repository and query set for further evaluation.
+
+## Research Definition — Finalized 5 November 2026
+
+### Final Research Question
+Does graph-guided repository navigation improve source-file
+retrieval effectiveness compared with lexical search in
+software repositories?
+
+### Research Objectives
+1. Develop a lexical search baseline for repository navigation.
+2. Develop a graph-guided source-file retrieval approach using
+   import dependencies.
+3. Evaluate both approaches using the same verified query set.
+4. Compare Top-1 Accuracy, Recall@5, and Mean Reciprocal Rank.
+5. Analyze the effect of graph connectivity and query wording.
+6. Identify limitations and failure cases.
+
+### Research Hypotheses
+- H1: Graph-guided retrieval may improve Top-1 accuracy
+  compared with lexical search.
+- H2: Graph-guided retrieval may improve Mean Reciprocal Rank.
+- H3: Retrieval performance may vary when import-graph
+  connections are removed or reduced.
+
+### Scope
+The current evaluation uses the psf/requests repository
+and a manually reviewed set of 12 queries.
+
+The study evaluates source-file retrieval, not complete
+coding-agent task completion.
+
+### Research Limitations
+The current evidence comes from one repository and a small
+query set. Results should be interpreted as exploratory.
+No general superiority claim is established.
+
+### Step 2 Status
+- [x] Research question defined
+- [x] Research objectives defined
+- [x] Research hypotheses defined
+- [x] Scope and limitations documented
+

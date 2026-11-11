@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-05",
+  "repository": "psf/requests",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "import_graph_edges_directed": 304,
+  "graph_boost": 0.1,
+  "baseline_top1_accuracy": 0.25,
+  "graph_top1_accuracy": 0.25,
+  "baseline_recall_at_5": 0.5833333333333334,
+  "graph_recall_at_5": 0.5833333333333334,
+  "baseline_mrr": 0.42126114626114625,
+  "graph_mrr": 0.4204064454064454,
+  "warning": "Exploratory evaluation on one repository and twelve manually reviewed queries. Results do not establish general superiority."
+}

@@ -1,0 +1,70 @@
+﻿{
+  "experiment_id": "STEP7-REPOSITORY-NAVIGATION",
+  "project_title": "Graph-Guided Repository Navigation for Coding Agents",
+  "research_question": "Does graph-guided repository navigation improve source-file retrieval effectiveness compared with lexical search in software repositories?",
+  "repository": {
+    "name": "psf/requests",
+    "local_path": "external/requests",
+    "expected_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60"
+  },
+  "dataset": {
+    "path": "results/independent-query-set.csv",
+    "expected_rows": 12,
+    "expected_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+    "expected_query_ids": [
+      "IND-001",
+      "IND-002",
+      "IND-003",
+      "IND-004",
+      "IND-005",
+      "IND-006",
+      "IND-007",
+      "IND-008",
+      "IND-009",
+      "IND-010",
+      "IND-011",
+      "IND-012"
+    ]
+  },
+  "methods": {
+    "baseline": {
+      "name": "Lexical Baseline",
+      "description": "Ranks repository files using direct lexical query-token matching."
+    },
+    "proposed": {
+      "name": "Graph-Augmented Search",
+      "description": "Uses direct lexical score plus a weighted one-hop import-neighbor score.",
+      "graph_boost": 0.10
+    }
+  },
+  "ranking": {
+    "top_k": 5,
+    "tie_breaking": "Alphabetical file path",
+    "same_repository_snapshot": true,
+    "same_query_dataset": true,
+    "same_preprocessing": true,
+    "same_ground_truth": true
+  },
+  "metrics": [
+    "Top-1 Accuracy",
+    "Recall@5",
+    "Mean Reciprocal Rank"
+  ],
+  "experimental_controls": [
+    "Both methods use the same pinned repository snapshot.",
+    "Both methods use the same 12 independent queries.",
+    "Both methods use the same verified target-file labels.",
+    "Both methods use the same file collection and preprocessing.",
+    "Both methods use the same ranking and tie-breaking policy.",
+    "The graph boost is fixed at 0.10 before further evaluation.",
+    "No parameter tuning will be performed on the 12-query evaluation set."
+  ],
+  "limitations": [
+    "The evaluation uses one Python repository.",
+    "The evaluation contains only 12 manually reviewed queries.",
+    "The results are exploratory and cannot establish general superiority.",
+    "Automated dataset validation does not independently prove semantic correctness of every query-target pair.",
+    "No statistical significance claim will be made from this small evaluation."
+  ],
+  "status": "DESIGN_DRAFT"
+}

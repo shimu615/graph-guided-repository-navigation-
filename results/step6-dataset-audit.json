@@ -1,0 +1,172 @@
+{
+  "audit_timestamp_utc": "2026-11-05T06:46:55.974722+00:00",
+  "project": "Graph-Guided Repository Navigation for Coding Agents",
+  "dataset": {
+    "path": "C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research\\results\\independent-query-set.csv",
+    "row_count": 12,
+    "sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+    "expected_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+    "hash_matches_recorded": true
+  },
+  "repository": {
+    "name": "psf/requests",
+    "path": "C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research\\external\\requests",
+    "actual_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+    "expected_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+    "snapshot_matches": true
+  },
+  "checks": {
+    "required_columns_present": true,
+    "expected_query_count": true,
+    "all_expected_ids_present": true,
+    "all_labels_verified": true,
+    "all_target_files_exist": true,
+    "no_duplicate_ids": true,
+    "no_duplicate_queries": true,
+    "no_blank_required_fields": true,
+    "repository_snapshot_matches": true
+  },
+  "verified_count": 12,
+  "target_exists_count": 12,
+  "duplicate_query_ids": [],
+  "duplicate_query_texts": [],
+  "repeated_target_files": [],
+  "row_results": [
+    {
+      "row_number": 2,
+      "query_id": "IND-001",
+      "query": "I need to send an HTTP request and handle the response. Where should I start?",
+      "proposed_target": "src/requests/api.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 3,
+      "query_id": "IND-002",
+      "query": "How can I keep cookies and authentication state across several HTTP requests?",
+      "proposed_target": "src/requests/sessions.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 4,
+      "query_id": "IND-003",
+      "query": "Where is the logic for attaching HTTP basic authentication credentials?",
+      "proposed_target": "src/requests/auth.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 5,
+      "query_id": "IND-004",
+      "query": "I need to customize how outgoing HTTP connections are created. Which file should I inspect?",
+      "proposed_target": "src/requests/adapters.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 6,
+      "query_id": "IND-005",
+      "query": "Where can I find the objects that represent HTTP requests and responses?",
+      "proposed_target": "src/requests/models.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 7,
+      "query_id": "IND-006",
+      "query": "How does the library organize and expose HTTP error classes?",
+      "proposed_target": "src/requests/exceptions.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 8,
+      "query_id": "IND-007",
+      "query": "Where is the code that manages a cookie jar and cookie lookup?",
+      "proposed_target": "src/requests/cookies.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 9,
+      "query_id": "IND-008",
+      "query": "I need to work with HTTP status codes using named constants. Where should I look?",
+      "proposed_target": "src/requests/status_codes.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 10,
+      "query_id": "IND-009",
+      "query": "Where is the implementation for a case-insensitive dictionary-like data structure?",
+      "proposed_target": "src/requests/structures.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 11,
+      "query_id": "IND-010",
+      "query": "Where can I find helper functions for preparing or normalizing URLs?",
+      "proposed_target": "src/requests/utils.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 12,
+      "query_id": "IND-011",
+      "query": "I need to understand how request hooks are dispatched. Which module should I inspect?",
+      "proposed_target": "src/requests/hooks.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    },
+    {
+      "row_number": 13,
+      "query_id": "IND-012",
+      "query": "Where does the package expose its public interface and version information?",
+      "proposed_target": "src/requests/__init__.py",
+      "review_status": "VERIFIED",
+      "reviewer_notes_present": true,
+      "target_exists": true,
+      "row_valid": true,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "manual_semantic_review_required": true,
+  "audit_pass": true
+}

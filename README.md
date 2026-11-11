@@ -1,58 +1,145 @@
-
 # Graph-Guided Repository Navigation for Coding Agents
 
-**Research project | Built with Shimu**
+**An Exploratory Evaluation of Import-Graph-Guided File Retrieval Against Lexical Search**
 
-## 1. Overview
+## Overview
 
-This project investigates whether graph-guided repository navigation can help coding agents locate relevant source files more effectively than standard text-based search.
+This research investigates whether lightweight graph-guided repository navigation can improve source-file retrieval compared with lexical search.
 
-The project will compare simple repository search methods using a controlled set of code-navigation questions.
+We implement a deterministic one-hop import-neighbor scoring approach and evaluate it on the Python source files of the [`psf/requests`](https://github.com/psf/requests) repository.
 
-## 2. Research Question
+The study provides an exploratory comparison of lexical and graph-guided retrieval, including parameter sensitivity, robustness checks, and statistical analysis.
 
-Can graph-guided repository navigation improve the retrieval of relevant source files compared with standard text-based search?
+## Research Question
 
-## 3. Proposed Methods
+**Does graph-guided repository navigation improve source-file retrieval effectiveness compared with lexical search in software repositories?**
 
-1. Baseline: keyword-based source-file search.
-2. Alternative: improved query and search strategy.
-3. Proposed method: graph-guided source-file retrieval using code dependencies.
+## Repository and Dataset
 
-These methods are proposed for evaluation. Their relative performance has not yet been established.
+- Target repository: `psf/requests`
+- Commit: `611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60`
+- Indexed Python files: 37
+- Directed import-graph entries: 304
+- Manually reviewed retrieval queries: 12
 
-## 4. Planned Evaluation
+## Methods
 
-The evaluation will use documented test questions and verified expected files.
+### 1. Lexical Baseline
 
-Planned metrics:
-- Top-1 accuracy
+Retrieves candidate source files using lexical matching.
+
+### 2. Graph-Guided Retrieval
+
+Uses one-hop import-neighbor information to adjust file retrieval scores.
+
+### Evaluation Metrics
+
+- Top-1 Accuracy
 - Recall@5
-- Search runtime
-- Error analysis
+- Mean Reciprocal Rank (MRR)
 
-All reported results will come from actual experiments.
+Additional experiments examine graph-boost sensitivity, edge dropout, ranking repeatability, and statistical comparisons.
 
-## 5. Project Structure
+## Main Results
 
-- `src/`: search implementations
-- `experiments/`: test cases and experiment scripts
-- `results/`: metrics and experiment logs
-- `references/`: research references
-- `notes/`: research notes
+| Metric | Lexical Baseline | Graph-Guided (0.10) |
+|---|---:|---:|
+| Top-1 Accuracy | 0.2500 | 0.2500 |
+| Recall@5 | 0.5833 | 0.5833 |
+| MRR | 0.421261 | 0.420406 |
 
-## 6. Reproducibility
+The graph-guided method did not improve Top-1 accuracy or Recall@5. Its MRR was marginally lower than the lexical baseline.
 
-The project will document the repository used, software dependencies, test questions, evaluation protocol, and limitations.
+The paired comparison produced 0 wins, 11 ties, and 1 loss for graph-guided retrieval.
 
-## 7. Current Status
+These findings are exploratory and do not establish that graph-based navigation is generally ineffective.
 
-Research question defined. Implementation and experiments are pending.
+## Reproducibility
 
-## 8. Limitations
+The project includes:
 
-The results may depend on repository size, programming language, dependency extraction quality, and the difficulty of the test questions.
+- Retrieval implementations
+- Import-graph construction
+- Evaluation scripts
+- Dataset validation
+- Ablation and robustness experiments
+- Statistical analysis
+- Automated tests
 
-## 9. Ethics and Attribution
+The final project test suite completed with **86 passed tests**.
 
-Code, datasets, and research references will be attributed to their original authors and used according to their licenses.
+## Project Structure
+
+```text
+.
+├── configs/
+├── experiments/
+├── notes/
+├── references/
+├── results/
+├── src/
+├── tests/
+├── README.md
+├── requirements.txt
+└── pytest.ini
+```
+
+## Installation
+
+```bash
+git clone https://github.com/shimu615/graph-guided-repository-navigation.git
+cd graph-guided-repository-navigation
+
+python -m venv .venv
+```
+
+Activate the environment:
+
+**Windows PowerShell**
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run tests:
+
+```bash
+pytest -q
+```
+
+## Limitations
+
+- The evaluation uses one Python repository.
+- The query set contains only 12 manually reviewed queries.
+- The graph representation focuses on one-hop import relationships.
+- The experiment evaluates file retrieval, not end-to-end coding-agent task completion.
+- Results should not be generalized to other repositories or programming languages without further evaluation.
+
+## Future Work
+
+Future research will investigate:
+
+- Evaluation across multiple repositories.
+- Larger and more diverse query sets.
+- Additional lexical and structural retrieval baselines.
+- Multi-hop and richer repository graphs.
+- Integration with end-to-end coding-agent workflows.
+
+## Research Scope
+
+This repository presents an exploratory study of graph-guided source-file retrieval. It does not claim that the experiments were conducted using Gemma 4 or that an end-to-end Gemma 4 coding agent was evaluated.
+
+## Citation
+
+If you use this research, please cite the project repository:
+
+**Graph-Guided Repository Navigation for Coding Agents.**
+
+## License
+
+A license will be added after selecting an appropriate open-source license.

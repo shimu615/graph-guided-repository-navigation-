@@ -1,0 +1,225 @@
+{
+  "step": 11,
+  "experiment": "Robustness Analysis",
+  "repository": "psf/requests",
+  "repository_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "graph_node_count": 37,
+  "baseline": {
+    "top1": 0.25,
+    "recall_at_5": 0.5833333333333334,
+    "mrr": 0.42126114626114625
+  },
+  "boost_sensitivity": [
+    {
+      "boost": 0.0,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.42126114626114625
+    },
+    {
+      "boost": 0.05,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "boost": 0.1,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "boost": 0.2,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4208032708032708
+    }
+  ],
+  "edge_dropout": [
+    {
+      "dropout_rate": 0.1,
+      "seed": 11,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "dropout_rate": 0.1,
+      "seed": 22,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.41623977873977874
+    },
+    {
+      "dropout_rate": 0.1,
+      "seed": 33,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "dropout_rate": 0.1,
+      "seed": 44,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "dropout_rate": 0.1,
+      "seed": 55,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed": 11,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.43074479127110704
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed": 22,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.39540644540644543
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed": 33,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4282055907055907
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed": 44,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.41803902116402114
+    },
+    {
+      "dropout_rate": 0.25,
+      "seed": 55,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4204064454064454
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed": 11,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.43198051948051946
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed": 22,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.39602256904888483
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed": 33,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.42172410922410924
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed": 44,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4189463314463314
+    },
+    {
+      "dropout_rate": 0.5,
+      "seed": 55,
+      "top1": 0.25,
+      "recall_at_5": 0.5833333333333334,
+      "mrr": 0.4197447568771098
+    }
+  ],
+  "ranking_stability": {
+    "repetitions_per_query": 5,
+    "query_count": 12,
+    "stable_query_count": 12,
+    "stability_rate": 1.0,
+    "details": [
+      {
+        "query_id": "IND-001",
+        "stable": true
+      },
+      {
+        "query_id": "IND-002",
+        "stable": true
+      },
+      {
+        "query_id": "IND-003",
+        "stable": true
+      },
+      {
+        "query_id": "IND-004",
+        "stable": true
+      },
+      {
+        "query_id": "IND-005",
+        "stable": true
+      },
+      {
+        "query_id": "IND-006",
+        "stable": true
+      },
+      {
+        "query_id": "IND-007",
+        "stable": true
+      },
+      {
+        "query_id": "IND-008",
+        "stable": true
+      },
+      {
+        "query_id": "IND-009",
+        "stable": true
+      },
+      {
+        "query_id": "IND-010",
+        "stable": true
+      },
+      {
+        "query_id": "IND-011",
+        "stable": true
+      },
+      {
+        "query_id": "IND-012",
+        "stable": true
+      }
+    ]
+  },
+  "parameters": {
+    "boost_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "dropout_rates": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "top_k": 5
+  },
+  "claim_scope": "Exploratory descriptive evaluation on one repository and 12 manually reviewed queries."
+}

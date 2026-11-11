@@ -1,0 +1,2 @@
+﻿candidate_id,query,verified_target,baseline_rank,baseline_top1,baseline_recall_at_5,baseline_runtime_ms,baseline_top5,graph_rank,graph_top1,graph_recall_at_5,graph_runtime_ms,graph_top5
+CAND-0016,Returns a Basic Auth string.,src/requests/auth.py,2,False,True,15.3298,src/requests/api.py | src/requests/auth.py | src/requests/models.py | src/requests/sessions.py | src/requests/__init__.py,2,False,True,0.0519,src/requests/api.py | src/requests/auth.py | src/requests/models.py | src/requests/sessions.py | src/requests/__init__.py

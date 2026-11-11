@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-31",
+  "repository": "psf/requests",
+  "repository_commit": "8018b864d79c38cf273c27b7615aaee6ab075d80",
+  "query_count": 12,
+  "query_csv_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+  "run1": {
+    "run": 1,
+    "csv_path": "results\\oct31-reproducibility\\run1\\evaluation.csv",
+    "json_path": "results\\oct31-reproducibility\\run1\\summary.json",
+    "csv_sha256": "625173c123757117d7fd3f8947149d263bd828c313b29a23b5a63fea5052a58a",
+    "json_sha256": "a62436eda86abc11a630916c142c35925fb986dd4d2135a95703080236139880"
+  },
+  "run2": {
+    "run": 2,
+    "csv_path": "results\\oct31-reproducibility\\run2\\evaluation.csv",
+    "json_path": "results\\oct31-reproducibility\\run2\\summary.json",
+    "csv_sha256": "625173c123757117d7fd3f8947149d263bd828c313b29a23b5a63fea5052a58a",
+    "json_sha256": "a62436eda86abc11a630916c142c35925fb986dd4d2135a95703080236139880"
+  },
+  "evaluation_csv_identical": true,
+  "summary_json_identical": true,
+  "reproducible": true,
+  "interpretation": "Both runs produced byte-identical CSV and JSON outputs.",
+  "limitations": [
+    "This checks repeatability in the current environment only.",
+    "It does not establish generalization to other repositories.",
+    "The evaluation dataset is small.",
+    "A matching output does not prove the scoring method is valid."
+  ]
+}

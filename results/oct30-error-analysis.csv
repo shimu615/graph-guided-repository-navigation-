@@ -1,0 +1,13 @@
+﻿query_id,query,target,baseline_rank,graph_rank,rank_improvement,outcome,baseline_reciprocal_rank,graph_reciprocal_rank
+IND-001,I need to send an HTTP request and handle the response. Where should I start?,,7,7,0,UNCHANGED,0.142857,0.142857
+IND-002,How can I keep cookies and authentication state across several HTTP requests?,,1,1,0,UNCHANGED,1.0,1.0
+IND-003,Where is the logic for attaching HTTP basic authentication credentials?,,3,3,0,UNCHANGED,0.333333,0.333333
+IND-004,I need to customize how outgoing HTTP connections are created. Which file should I inspect?,,1,1,0,UNCHANGED,1.0,1.0
+IND-005,Where can I find the objects that represent HTTP requests and responses?,,4,4,0,UNCHANGED,0.25,0.25
+IND-006,How does the library organize and expose HTTP error classes?,,9,9,0,UNCHANGED,0.111111,0.111111
+IND-007,Where is the code that manages a cookie jar and cookie lookup?,,2,2,0,UNCHANGED,0.5,0.5
+IND-008,I need to work with HTTP status codes using named constants. Where should I look?,,13,15,-2,REGRESSED,0.076923,0.066667
+IND-009,Where is the implementation for a case-insensitive dictionary-like data structure?,,2,1,1,IMPROVED,0.5,1.0
+IND-010,Where can I find helper functions for preparing or normalizing URLs?,,1,1,0,UNCHANGED,1.0,1.0
+IND-011,I need to understand how request hooks are dispatched. Which module should I inspect?,,20,20,0,UNCHANGED,0.05,0.05
+IND-012,Where does the package expose its public interface and version information?,,11,11,0,UNCHANGED,0.090909,0.090909

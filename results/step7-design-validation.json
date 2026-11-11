@@ -1,0 +1,82 @@
+{
+  "step": 7,
+  "title": "Experimental Design Validation",
+  "timestamp_utc": "2026-11-05T06:55:11.693297+00:00",
+  "status": "STEP 7 DESIGN VALIDATION PASSED",
+  "experiment_id": "STEP7-REPOSITORY-NAVIGATION",
+  "repository_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+  "dataset_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+  "dataset_rows": 12,
+  "checks_passed": 13,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check": "repository_exists",
+      "status": "PASS",
+      "detail": "C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research\\external\\requests"
+    },
+    {
+      "check": "repository_commit_matches",
+      "status": "PASS",
+      "detail": "expected=611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60; actual=611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60"
+    },
+    {
+      "check": "dataset_exists",
+      "status": "PASS",
+      "detail": "C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research\\results\\independent-query-set.csv"
+    },
+    {
+      "check": "dataset_sha256_matches",
+      "status": "PASS",
+      "detail": "expected=16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3; actual=16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3"
+    },
+    {
+      "check": "dataset_row_count_matches",
+      "status": "PASS",
+      "detail": "expected=12; actual=12"
+    },
+    {
+      "check": "query_ids_match",
+      "status": "PASS",
+      "detail": "column=query_id; actual_ids=['IND-001', 'IND-002', 'IND-003', 'IND-004', 'IND-005', 'IND-006', 'IND-007', 'IND-008', 'IND-009', 'IND-010', 'IND-011', 'IND-012']"
+    },
+    {
+      "check": "query_ids_unique",
+      "status": "PASS",
+      "detail": "unique=12; total=12"
+    },
+    {
+      "check": "graph_boost_is_frozen",
+      "status": "PASS",
+      "detail": "configured graph_boost=0.1"
+    },
+    {
+      "check": "top_k_is_five",
+      "status": "PASS",
+      "detail": "configured top_k=5"
+    },
+    {
+      "check": "both_methods_share_controls",
+      "status": "PASS",
+      "detail": "Repository, dataset, preprocessing and ground truth must match."
+    },
+    {
+      "check": "evaluation_metrics_defined",
+      "status": "PASS",
+      "detail": "configured=['Mean Reciprocal Rank', 'Recall@5', 'Top-1 Accuracy']"
+    },
+    {
+      "check": "previous_step_outputs_exist",
+      "status": "PASS",
+      "detail": "All required Step 4-6 outputs found."
+    },
+    {
+      "check": "design_document_exists",
+      "status": "PASS",
+      "detail": "notes\\step7-experimental-design.md"
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "interpretation": "This validates the experiment design and its inputs. It does not run a new retrieval experiment or establish that graph-guided retrieval is superior."
+}

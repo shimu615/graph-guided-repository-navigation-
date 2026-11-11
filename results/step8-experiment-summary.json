@@ -1,0 +1,28 @@
+{
+  "experiment_id": "STEP7-REPOSITORY-NAVIGATION",
+  "project_title": "Graph-Guided Repository Navigation for Coding Agents",
+  "run_timestamp_utc": "2026-11-09T06:43:59.604559+00:00",
+  "repository": "psf/requests",
+  "repository_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+  "dataset_path": "results\\independent-query-set.csv",
+  "dataset_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "import_graph_edges_directed": 304,
+  "graph_boost": 0.1,
+  "top_k": 5,
+  "baseline_top1_accuracy": 0.25,
+  "baseline_recall_at_5": 0.5833333333333334,
+  "baseline_mrr": 0.42126114626114625,
+  "graph_top1_accuracy": 0.25,
+  "graph_recall_at_5": 0.5833333333333334,
+  "graph_mrr": 0.4204064454064454,
+  "limitations": [
+    "The evaluation uses one Python repository.",
+    "The evaluation contains only 12 manually reviewed queries.",
+    "The results are exploratory and cannot establish general superiority.",
+    "Automated dataset validation does not independently prove semantic correctness of every query-target pair.",
+    "No statistical significance claim will be made from this small evaluation."
+  ],
+  "warning": "Exploratory evaluation on one repository and twelve manually reviewed queries. Results do not establish general superiority."
+}

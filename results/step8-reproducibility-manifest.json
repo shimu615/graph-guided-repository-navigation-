@@ -1,0 +1,25 @@
+{
+  "run_timestamp_utc": "2026-11-09T06:43:59.604559+00:00",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\shamm\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "working_project_root": "C:\\Users\\shamm\\OneDrive\\Desktop\\gemma4-paper-research",
+  "repository": "psf/requests",
+  "repository_path": "external\\requests",
+  "repository_commit": "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60",
+  "dataset_path": "results\\independent-query-set.csv",
+  "dataset_sha256": "16eed990ed42c011b1d751366f7982357a4a5dbef641cf68a21a7fb954e198f3",
+  "config_path": "configs\\step7-experiment-config.json",
+  "config_sha256": "f18cb0c0183856b7c8d69615d8adc12a40e0914f7ecdccb12092428c970fdbda",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "graph_boost": 0.1,
+  "top_k": 5,
+  "ranking_tie_breaking": "Alphabetical file path",
+  "method_implementation": {
+    "baseline": "retrieval_core.rank_baseline",
+    "proposed": "retrieval_core.rank_graph",
+    "graph_construction": "retrieval_core.build_import_graph"
+  },
+  "note": "This manifest records the inputs and runtime environment. It does not claim bitwise reproducibility across all platforms."
+}

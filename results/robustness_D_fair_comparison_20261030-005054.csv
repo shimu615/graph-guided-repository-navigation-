@@ -1,0 +1,13 @@
+query_id,variant,query,target,baseline_rank,graph_rank,baseline_top1,graph_top1,baseline_reciprocal_rank,graph_reciprocal_rank
+IND-001,full_graph,I need to send an HTTP request and handle the response. Where should I start?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-002,full_graph,How can I keep cookies and authentication state across several HTTP requests?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-003,full_graph,Where is the logic for attaching HTTP basic authentication credentials?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-004,full_graph,I need to customize how outgoing HTTP connections are created. Which file should I inspect?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-005,full_graph,Where can I find the objects that represent HTTP requests and responses?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-006,full_graph,How does the library organize and expose HTTP error classes?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-007,full_graph,Where is the code that manages a cookie jar and cookie lookup?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-008,full_graph,I need to work with HTTP status codes using named constants. Where should I look?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-009,full_graph,Where is the implementation for a case-insensitive dictionary-like data structure?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-010,full_graph,Where can I find helper functions for preparing or normalizing URLs?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-011,full_graph,I need to understand how request hooks are dispatched. Which module should I inspect?,,37,37,0,0,0.02702702702702703,0.02702702702702703
+IND-012,full_graph,Where does the package expose its public interface and version information?,,37,37,0,0,0.02702702702702703,0.02702702702702703

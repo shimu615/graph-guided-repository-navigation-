@@ -1,0 +1,13 @@
+﻿query_id,query,proposed_target,review_status,reviewer_notes
+IND-001,I need to send an HTTP request and handle the response. Where should I start?,src/requests/api.py,VERIFIED,"Checked target source; found: def request(, def get("
+IND-002,How can I keep cookies and authentication state across several HTTP requests?,src/requests/sessions.py,VERIFIED,Checked target source; found: class Session(
+IND-003,Where is the logic for attaching HTTP basic authentication credentials?,src/requests/auth.py,VERIFIED,Checked target source; found: class HTTPBasicAuth(
+IND-004,I need to customize how outgoing HTTP connections are created. Which file should I inspect?,src/requests/adapters.py,VERIFIED,Checked target source; found: class HTTPAdapter(
+IND-005,Where can I find the objects that represent HTTP requests and responses?,src/requests/models.py,VERIFIED,"Checked target source; found: class Request(, class Response"
+IND-006,How does the library organize and expose HTTP error classes?,src/requests/exceptions.py,VERIFIED,"Checked target source; found: class RequestException, class HTTPError"
+IND-007,Where is the code that manages a cookie jar and cookie lookup?,src/requests/cookies.py,VERIFIED,"Checked target source; found: class RequestsCookieJar, def cookiejar_from_dict("
+IND-008,I need to work with HTTP status codes using named constants. Where should I look?,src/requests/status_codes.py,VERIFIED,"Checked target source; found: codes: LookupDict, def _init("
+IND-009,Where is the implementation for a case-insensitive dictionary-like data structure?,src/requests/structures.py,VERIFIED,Checked target source; found: class CaseInsensitiveDict
+IND-010,Where can I find helper functions for preparing or normalizing URLs?,src/requests/utils.py,VERIFIED,"Checked target source; found: def requote_uri(, def prepend_scheme_if_needed("
+IND-011,I need to understand how request hooks are dispatched. Which module should I inspect?,src/requests/hooks.py,VERIFIED,Checked target source; found: def dispatch_hook(
+IND-012,Where does the package expose its public interface and version information?,src/requests/__init__.py,VERIFIED,"Checked target source; found: __version__, __all__ ="

@@ -9,3 +9,5 @@ __pycache__/
 
 # Downloaded third-party repositories
 external/
+
+.pytest_cache/

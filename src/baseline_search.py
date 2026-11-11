@@ -1,71 +1,41 @@
-﻿"""Baseline keyword search for the repository-navigation study."""
-
-import argparse
-import re
+﻿import argparse
 from pathlib import Path
 
-EXCLUDED_DIRS = {".git", ".venv", "__pycache__", "node_modules", "dist"}
-
-
-def tokenize(text):
-    """Return lowercase word tokens."""
-    return set(re.findall(r"[a-zA-Z_][a-zA-Z0-9_]*", text.lower()))
-
-
-def collect_files(root):
-    """Collect repository text/code files while skipping generated folders."""
-    root = Path(root)
-    allowed = {".py", ".js", ".jsx", ".ts", ".tsx", ".java", ".md", ".json"}
-    files = []
-
-    for path in root.rglob("*"):
-        if not path.is_file() or path.suffix.lower() not in allowed:
-            continue
-        if any(part in EXCLUDED_DIRS for part in path.parts):
-            continue
-        try:
-            content = path.read_text(encoding="utf-8", errors="ignore")
-        except OSError:
-            continue
-        files.append((path, content))
-
-    return files
-
+from retrieval_core import (
+    collect_python_files,
+    normalize_texts,
+    rank_baseline
+)
 
 def search_repository(root, query):
-    """Rank files by overlap between query words and file path/content."""
-    query_tokens = tokenize(query)
-    if not query_tokens:
+    if not query.strip():
         return []
 
-    results = []
-    for path, content in collect_files(root):
-        searchable = f"{path.name} {path.stem} {content}"
-        matched = sorted(query_tokens & tokenize(searchable))
-        if matched:
-            results.append({
-                "file": path.name,
-                "path": path.as_posix(),
-                "score": len(matched),
-                "matched_tokens": matched,
-            })
+    files = collect_python_files(root)
+    texts = normalize_texts(root, files)
+    ranked, scores = rank_baseline(query, texts)
 
-    results.sort(key=lambda item: (-item["score"], item["path"]))
-    return results
-
+    return [
+        {
+            "file": Path(path).name,
+            "path": path,
+            "score": scores[path]
+        }
+        for path in ranked
+        if scores[path] > 0
+    ]
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", required=True, help="Repository directory")
-    parser.add_argument("--query", required=True, help="Search query")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", required=True)
+    parser.add_argument("--query", required=True)
     args = parser.parse_args()
 
     for result in search_repository(args.root, args.query):
         print(
-            f'{result["file"]} | score={result["score"]} | '
-            f'matched={",".join(result["matched_tokens"])}'
+            f'{result["file"]} | {result["path"]} | '
+            f'score={result["score"]:.4f}'
         )
-
 
 if __name__ == "__main__":
     main()

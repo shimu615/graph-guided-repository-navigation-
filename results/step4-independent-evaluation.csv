@@ -1,0 +1,13 @@
+﻿query_id,query,verified_target,baseline_rank,graph_rank,baseline_top1,graph_top1,baseline_top5,graph_top5,baseline_mrr,graph_mrr,review_status
+IND-001,I need to send an HTTP request and handle the response. Where should I start?,src/requests/api.py,7,7,False,False,False,False,0.14285714285714285,0.14285714285714285,VERIFIED
+IND-002,How can I keep cookies and authentication state across several HTTP requests?,src/requests/sessions.py,1,1,True,True,True,True,1.0,1.0,VERIFIED
+IND-003,Where is the logic for attaching HTTP basic authentication credentials?,src/requests/auth.py,3,3,False,False,True,True,0.3333333333333333,0.3333333333333333,VERIFIED
+IND-004,I need to customize how outgoing HTTP connections are created. Which file should I inspect?,src/requests/adapters.py,1,1,True,True,True,True,1.0,1.0,VERIFIED
+IND-005,Where can I find the objects that represent HTTP requests and responses?,src/requests/models.py,4,4,False,False,True,True,0.25,0.25,VERIFIED
+IND-006,How does the library organize and expose HTTP error classes?,src/requests/exceptions.py,9,9,False,False,False,False,0.1111111111111111,0.1111111111111111,VERIFIED
+IND-007,Where is the code that manages a cookie jar and cookie lookup?,src/requests/cookies.py,2,2,False,False,True,True,0.5,0.5,VERIFIED
+IND-008,I need to work with HTTP status codes using named constants. Where should I look?,src/requests/status_codes.py,13,15,False,False,False,False,0.07692307692307693,0.06666666666666667,VERIFIED
+IND-009,Where is the implementation for a case-insensitive dictionary-like data structure?,src/requests/structures.py,2,2,False,False,True,True,0.5,0.5,VERIFIED
+IND-010,Where can I find helper functions for preparing or normalizing URLs?,src/requests/utils.py,1,1,True,True,True,True,1.0,1.0,VERIFIED
+IND-011,I need to understand how request hooks are dispatched. Which module should I inspect?,src/requests/hooks.py,20,20,False,False,False,False,0.05,0.05,VERIFIED
+IND-012,Where does the package expose its public interface and version information?,src/requests/__init__.py,11,11,False,False,False,False,0.09090909090909091,0.09090909090909091,VERIFIED

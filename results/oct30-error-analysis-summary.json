@@ -1,0 +1,13 @@
+{
+  "analysis_date": "2026-10-30",
+  "source_evaluation": "results\\oct29-independent-evaluation.csv",
+  "query_count": 12,
+  "improved_queries": 1,
+  "regressed_queries": 1,
+  "unchanged_queries": 10,
+  "baseline_top1_from_ranks": 0.25,
+  "graph_top1_from_ranks": 0.3333333333333333,
+  "baseline_mrr_from_ranks": 0.4212610833333333,
+  "graph_mrr_from_ranks": 0.4620730833333333,
+  "interpretation": "Exploratory analysis on a small query set. Rank changes describe these queries only and do not establish general superiority."
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-05",
+  "repository": "psf/requests",
+  "query_count": 12,
+  "python_files_indexed": 37,
+  "directed_import_graph_edges": 304,
+  "graph_boost": 0.1,
+  "top_k": 5,
+  "baseline_metrics": {
+    "top1_accuracy": 0.25,
+    "recall_at_5": 0.5833333333333334,
+    "mrr": 0.42126114626114625
+  },
+  "graph_metrics": {
+    "top1_accuracy": 0.25,
+    "recall_at_5": 0.5833333333333334,
+    "mrr": 0.4204064454064454
+  },
+  "metric_differences_graph_minus_baseline": {
+    "top1_accuracy": 0.0,
+    "recall_at_5": 0.0,
+    "mrr": -0.0008547008547008517
+  },
+  "query_rank_changes": {
+    "UNCHANGED": 11,
+    "REGRESSED": 1
+  },
+  "improved_query_ids": [],
+  "regressed_query_ids": [
+    "IND-008"
+  ],
+  "unchanged_query_ids": [
+    "IND-001",
+    "IND-002",
+    "IND-003",
+    "IND-004",
+    "IND-005",
+    "IND-006",
+    "IND-007",
+    "IND-009",
+    "IND-010",
+    "IND-011",
+    "IND-012"
+  ],
+  "top1_changes": {
+    "baseline_top1_count": 3,
+    "graph_top1_count": 3
+  },
+  "interpretation": "This is an exploratory error analysis of one repository and twelve manually reviewed queries. It does not establish general superiority or statistical significance."
+}

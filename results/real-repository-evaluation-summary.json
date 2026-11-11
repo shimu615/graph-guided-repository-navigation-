@@ -1,0 +1,30 @@
+{
+  "project": "Graph-Guided Repository Navigation for Coding Agents",
+  "repository": "psf/requests",
+  "dataset_rows": 20,
+  "python_files_indexed": 19,
+  "import_graph_edges": 68,
+  "evaluation_type": "exploratory prototype evaluation",
+  "method_note": "This script implements a separate keyword-overlap baseline and an import-neighbor score boost. It does not call the existing baseline_search.py or graph_search.py implementations.",
+  "validity_warning": "Queries were selected from repository source descriptions, so lexical overlap may be inflated. Results are exploratory and do not establish generalization or superiority.",
+  "metrics": [
+    {
+      "method": "baseline",
+      "query_count": 20,
+      "top1_accuracy": 0.95,
+      "recall_at_5": 1.0,
+      "mean_reciprocal_rank": 0.975,
+      "mean_query_runtime_ms": 16.8531,
+      "runtime_note": "Single-process prototype measurements; not a reliable benchmark of speed."
+    },
+    {
+      "method": "graph",
+      "query_count": 20,
+      "top1_accuracy": 0.95,
+      "recall_at_5": 1.0,
+      "mean_reciprocal_rank": 0.975,
+      "mean_query_runtime_ms": 0.0526,
+      "runtime_note": "Single-process prototype measurements; not a reliable benchmark of speed."
+    }
+  ]
+}
